@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.XR.ARFoundation;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(ARPlaneManager))]
 public class ARExperienceManager : MonoBehaviour
@@ -44,10 +45,15 @@ public class ARExperienceManager : MonoBehaviour
     }
 
     public void Restart()
-    {
+    {   // A
         ARDebugManager.Instance.LogInfo("Restart Experience");
         OnRetarted?.Invoke();
         Initialized = false;
         arPlaneManager.enabled = true;
     }
+    public void Exit() {
+        SceneManager.LoadScene("MainMenu");
+    }
 }
+
+    

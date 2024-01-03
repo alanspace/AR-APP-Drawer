@@ -13,15 +13,15 @@ MonoBehaviour:
   m_Name: LineSettings
   m_EditorClassIdentifier: 
   lineTagName: Line
-  startColor: {r: 1, g: 1, b: 1, a: 1}
-  endColor: {r: 1, g: 1, b: 1, a: 1}
+  startColor: {r: 1, g: 0.99501103, b: 0, a: 1}
+  endColor: {r: 0.39607847, g: 0.39607847, b: 0.39607847, a: 1}
   startWidth: 0.01
   endWidth: 0.01
   distanceFromCamera: 0.3
   defaultMaterial: {fileID: 2100000, guid: 96e5ea0aeb55e488bb67155c0ccec1fe, type: 2}
   cornerVertices: 5
   endCapVertices: 5
-  minDistanceBeforeNewPoint: 0.001
+  minDistanceBeforeNewPoint: 0
   allowSimplification: 0
   tolerance: 0.001
   applySimplifyAfterPoints: 20
